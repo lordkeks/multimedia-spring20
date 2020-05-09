@@ -12,7 +12,7 @@ class txt:
             buf = list(map(lambda c: c, f.read()))
         return buf
 
-    def count_char_occurrences(self) -> dict:
+    def count_char_occurrences(self) -> (dict, dict):
         keys: set = set(self.__data)
         d1: dict = {}
         d2: dict = {}
