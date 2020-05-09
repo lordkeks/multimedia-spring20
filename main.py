@@ -23,12 +23,6 @@ class txt:
         d2 = dict(sorted(d2.items(), key=lambda x: x[1], reverse=True))
         return d1, d2
 
-    def count_relative_char_occurrences(self) -> dict:
-        buf: dict = self.count_char_occurrences()
-        for k in buf.keys():
-            buf[k] = self.__data.count(k) / len(self)
-        return buf
-
 
 def main() -> None:
     buf: txt = txt("midsummer.txt")
